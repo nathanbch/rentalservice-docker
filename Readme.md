@@ -57,3 +57,17 @@ git commit -m "Dockerisation de l'application RentalService"
 git push
 
 
+## Deuxième microservice PHP
+
+### Build
+docker build -t nathanbch/php-service .
+
+### Run
+docker run -p 8081:80 nathanbch/php-service
+
+### Test
+http://localhost:8081
+
+### Docker Hub
+https://hub.docker.com/r/nathanbch/php-service
+
