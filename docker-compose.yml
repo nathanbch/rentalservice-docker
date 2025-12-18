@@ -1,0 +1,13 @@
+services:
+  java-service:
+    build: ./RentalService
+    image: nathanbch/rentalservice
+    ports:
+      - "8080:8080"
+
+  php-service:
+    build: ./RentalService/php-service
+    image: nathanbch/php-service
+    ports:
+      - "8081:80"
+

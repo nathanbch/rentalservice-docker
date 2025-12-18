@@ -71,3 +71,14 @@ http://localhost:8081
 ### Docker Hub
 https://hub.docker.com/r/nathanbch/php-service
 
+
+## Communication HTTP entre microservices
+
+Lancement :
+docker-compose up --build
+
+Endpoints :
+- Java : http://localhost:8080/bonjour
+- PHP : http://localhost:8081
+- Communication : http://localhost:8080/appel-php
+
